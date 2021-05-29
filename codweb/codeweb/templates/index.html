@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock  %}
+{% block title %}{% endblock  %}
+{% block body %}
+<div class="site_block">
+<img src="{% static 'Capture.PNG' %}" style="width: 100%;">
+<div  class="content">
+	<h1>Hi! There Thanks For Coming</h1>
+<!--Head-->
+root@akash.web-developer:~$
+
+<p class="site_body"><code>I'm a professional web designer and WordPress developer.
+making a website is my passion and I always love to make creative things for my respectable clients. maintaining a deadline for a project and providing professional works is my first priority. Love to work and want to make my clients happy.
+
+#My skills
+
+1.psd to HTML
+2.HTML5
+3.CSS3
+4.Bootstrap
+5.WordPress Developer
+6. premium WordPress Theme customization
+7. premium WordPress Theme installation like the demo(with some customization)
+8. creating a fully responsive WordPress website from scratch(for any niche/service)
+9.Redesigning an existing website on WordPress website
+10.WordPress Website Clone and migration
+
+Thank You! ;)</code> </p>
+	
+	<!--Menu-->
+	<div class="menu">
+		<ul>
+			<li>home</li>
+			<li>skill</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+	</div><br>
+	<!--Type Menu-->
+	root@akash.web-developer:~$<input class="input" id="pathInput">
+</div>
+</div>
+<script>
+    var input = document.getElementById("pathInput");
+    input.addEventListener("keyup", e => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            console.log(e.target.value);
+            location.pathname = `/${e.target.value}`
+        }
+    });
+</script>
+{% endblock  %}

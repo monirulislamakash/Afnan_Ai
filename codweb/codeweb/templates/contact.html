@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock  %}
+{% block title %}{% endblock  %}
+{% block body %}
+<div class="site_block">
+<img src="{% static 'Capture.PNG' %}" style="width: 100%;">
+<div  class="content">
+<!--Head-->
+root@akash.web-developer:~$
+<p class="site_body"><code>
+    Email:monirulislamakash@gmail.com<br>
+    Instagram:<a href="https://github.com/monirulislamakash/" target="block" style="margin:0px;">https://github.com/monirulislamakash/</a><br>
+    Github:<a href="https://www.instagram.com/afnan_islam_akash/" target="block" style="margin:0px;">https://www.instagram.com/afnan_islam_akash/</a><br>
+</code> </p>
+	
+	<!--Menu-->
+	<div class="menu">
+		<ul>
+			<li>home</li>
+			<li>skill</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+	</div><br>
+	<!--Type Menu-->
+	root@akash.web-developer:~$<input class="input" id="pathInput">
+</div>
+<script>
+    var input = document.getElementById("pathInput");
+    input.addEventListener("keyup", e => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            console.log(e.target.value);
+            location.pathname = `/${e.target.value}`
+        }
+    });
+</script>
+{% endblock  %}

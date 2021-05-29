@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock  %}
+{% block title %}{% endblock  %}
+{% block body %}
+<div class="site_block">
+<img src="{% static 'Capture.PNG' %}" style="width: 100%;">
+<div  class="content">
+<!--Head-->
+root@akash.web-developer:~$
+<p class="site_body"><code>
+#My skills<br>
+1.psd to HTML<br>
+2.HTML5<br>
+3.CSS3<br>
+4.Bootstrap<br>
+5.WordPress Developer<br>
+6. premium WordPress Theme customization<br>
+7. premium WordPress Theme installation like the demo(with some customization)<br>
+8. creating a fully responsive WordPress website from scratch(for any niche/service)<br>
+9.Redesigning an existing website on WordPress website<br>
+10.WordPress Website Clone and migration<br>
+
+Thank You! ;)</code></p>
+	
+	<!--Menu-->
+	<div class="menu">
+		<ul>
+			<li>home</li>
+			<li>skill</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+	</div><br>
+	<!--Type Menu-->
+	root@akash.web-developer:~$<input class="input" id="pathInput">
+</div>
+<script>
+    var input = document.getElementById("pathInput");
+    input.addEventListener("keyup", e => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            console.log(e.target.value);
+            location.pathname = `/${e.target.value}`
+        }
+    });
+</script>
+{% endblock  %}

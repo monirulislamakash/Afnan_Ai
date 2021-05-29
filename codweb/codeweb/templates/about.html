@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock  %}
+{% block title %}{% endblock  %}
+{% block body %}
+<div class="site_block">
+<img src="{% static 'Capture.PNG' %}" style="width: 100%;">
+<div class="content">
+<!--Head-->
+root@akash.web-developer:~$
+<p class="site_body"><code>I'm a professional web designer and WordPress developer.
+making a website is my passion and I always love to make creative things for my respectable clients. maintaining a deadline for a project and providing professional works is my first priority. Love to work and want to make my clients happy.
+
+
+Thank You! ;)</code> </p>
+	
+	<!--Menu-->
+	<div class="menu">
+		<ul>
+			<li>home</li>
+			<li>skill</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+	</div><br>
+	<!--Type Menu-->
+	root@akash.web-developer:~$<input class="input" id="pathInput">
+</div>
+<script>
+    var input = document.getElementById("pathInput");
+    input.addEventListener("keyup", e => {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            console.log(e.target.value);
+            location.pathname = `/${e.target.value}`
+        }
+    });
+</script>
+{% endblock  %}
